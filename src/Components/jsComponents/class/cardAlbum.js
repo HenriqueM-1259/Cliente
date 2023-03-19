@@ -1,4 +1,4 @@
-class Card{
+class cardAlbum{
     constructor(listaCard,Root){
         this.listaCard = listaCard
         this.card = ``
@@ -10,12 +10,11 @@ class Card{
         for (let i = 0; i < this.listaCard.length; i++) {
            console.log(this.listaCard[i])
             this.card += `
-        <div class="card" style="width: 18rem;">
+        <div class="card text-center mt-4" style="width: 16rem;">
         <img src="..." class="card-img-top" alt="...">
         <div class="card-body">
         <h5 class="card-title">${this.listaCard[i].nome}</h5>
-        <p class="card-text">TitleNull</p>
-        <a href="#" onclick="${this.listaCard[i].id}" class="btn btn-primary">Go somewhere</a>
+        <a href="#" onclick="CarregaPaginaAlbum(${this.listaCard[i].id})" class="btn btn-primary">Ouvir o Album?</a>
         </div>
         </div>
        `

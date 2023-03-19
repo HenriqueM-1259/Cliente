@@ -19,3 +19,8 @@ function converterObjeto(obj){
     obj = obj[1]
     return obj;
 }
+
+function cleanViewCard(Object){
+    Object.empty()
+    Artista = []
+}
